@@ -1,0 +1,26 @@
+{
+    "name": "EyeCare",
+    "description": "Helps protect your eyes!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "minimum_chrome_version": "93",
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "notifications",
+        "alarms",
+        "storage"
+    ],
+    "icons": {
+        "512": "icon512.png",
+        "128": "icon128.png",
+        "64": "icon64.png",
+        "16": "icon16.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon64.png"
+    }
+}
